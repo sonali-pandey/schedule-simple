@@ -27,8 +27,19 @@ dayHour.forEach(function(hour){
     var task = $("<textarea>")
         .addClass("col-9 description form-control")
         .attr("id",hour.hr24);
+
+
+        // if(value!=null){
+        //     $(this).text(value);
+        // }
+        // else{
+        //     $(this).text("");
+        // }
     
-    var saveBtn = $("<button class='saveBtn col-1'><i class='fas fa-save'></i></button>");
+    var saveBtn = $("<button>")
+        .addClass("saveBtn col-1")
+        .attr("id",hour.hr24)
+        .html("<i class='fas fa-save'></i>");
 
     containerEl.append(timeBlock);
     timeBlock.append(hourTab);
@@ -41,7 +52,7 @@ dayHour.forEach(function(hour){
 $(".description").each(function(){
     var block = parseInt($(this).attr("id"));
     var time = parseInt(now.format("H"));
-
+    
     if(block===time){
         $(this).addClass("present");
     }
@@ -52,4 +63,20 @@ $(".description").each(function(){
     else{
         $(this).addClass("future");
     }
-})
+
+    // loading the saved data from local storage
+    var value = window.localStorage.getItem(block);
+    if(value!=null){
+        $(this).text(value);
+    }
+    else{
+        $(this).text("");
+    }
+});
+
+// Save Tasks/Events to Local Storage
+$(".saveBtn").on("click",function(event){
+    event.preventDefault();
+    var btnId = parseInt($(this).attr("id"));
+    window.localStorage.setItem(btnId,($(this).siblings(".description").val()));
+});
