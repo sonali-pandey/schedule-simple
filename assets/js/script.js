@@ -79,4 +79,4 @@ $(".saveBtn").on("click",function(event){
 // Periodically check the time-block to update the color coding
  setInterval(function(){
     colorCode();
-   }, 1000);
+   }, (1000*60)*30);
