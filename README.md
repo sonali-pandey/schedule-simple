@@ -10,7 +10,7 @@
 * Save button to save you hourly tasks/events. Keeps it in the app as long as you need them.
 * Clear the tasks/events and save to remove the tasks.
 
-## Screens:
+## Screen:
 ![](./assets/images/schedule-simple-screen.png)
 
 ### Thank you
