@@ -1,4 +1,4 @@
-# Schedule Simple
+# [Schedule Simple](https://sonali-pandey.github.io/schedule-simple/)
 ### A simple calendar app for scheduling your work day
 
 ## Features:
@@ -10,8 +10,13 @@
 * Save button to save you hourly tasks/events. Keeps it in the app as long as you need them.
 * Clear the tasks/events and save to remove the tasks.
 
-## Screens:
+## Screen:
 ![](./assets/images/schedule-simple-screen.png)
 
-### Thank you
-### Created by: Sonali Pandey
+## Libraries:
+* jQuery
+* Day.js
+* Bootstrap
+
+## Thank you
+### Created by: [Sonali Pandey](github.com/sonali-pandey)
