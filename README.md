@@ -1,4 +1,4 @@
-# schedule simple
+# Schedule Simple
 ### A simple calendar app for scheduling your work day
 
 ## Features:
@@ -10,7 +10,7 @@
 * Save button to save you hourly tasks/events. Keeps it in the app as long as you need them.
 * Clear the tasks/events and save to remove the tasks.
 
-## Screen
+## Screens:
 
 ### Thank you
 ### Created by: Sonali Pandey
