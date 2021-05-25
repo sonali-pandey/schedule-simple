@@ -11,6 +11,7 @@
 * Clear the tasks/events and save to remove the tasks.
 
 ## Screens:
+![](./assets/images/schedule-simple-screen.png)
 
 ### Thank you
 ### Created by: Sonali Pandey
