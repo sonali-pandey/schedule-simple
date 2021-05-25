@@ -6,7 +6,7 @@ var containerEl = $(".container");
 $("#currentDay").text(now.format("dddd, MMMM Do"));
 
 // Creating an array with the hours of the day
-var dayHour = Array.from(new Array(24)).map(function (v,i){
+var dayHour = Array.from(new Array(9)).map(function (v,i){
     var hr12 = dayjs().hour(i+9).format("h:00 A");
     var hr24 = dayjs().hour(i+9).format("H");
     return {hr12,hr24};
