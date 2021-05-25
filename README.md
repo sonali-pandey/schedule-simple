@@ -1,4 +1,4 @@
-# Schedule Simple
+# [Schedule Simple](https://sonali-pandey.github.io/schedule-simple/)
 ### A simple calendar app for scheduling your work day
 
 ## Features:
@@ -13,5 +13,10 @@
 ## Screen:
 ![](./assets/images/schedule-simple-screen.png)
 
-### Thank you
+## Libraries:
+* jQuery
+* Day.js
+* Bootstrap
+
+## Thank you
 ### Created by: Sonali Pandey
