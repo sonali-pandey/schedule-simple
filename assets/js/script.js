@@ -1,6 +1,7 @@
 var now = dayjs();
 
 var containerEl = $(".container");
+var body = $("body");
 
 // display current day
 $("#currentDay").text(now.format("dddd, MMMM Do"));
@@ -18,18 +19,18 @@ dayHour.forEach(function(hour){
         .addClass("row time-block");
 
     var hourTab = $("<div>")
-        .addClass("hour col-2");
+        .addClass("hour col-3 col-lg-2 ");
     
     var hourText = $("<p>")
         .addClass("m-4")
         .text(hour.hr12);
         
     var task = $("<textarea>")
-        .addClass("col-9 description form-control")
+        .addClass(" col-6 col-lg-9 description form-control")
         .attr("id",hour.hr24);
     
     var saveBtn = $("<button>")
-        .addClass("saveBtn col-1")
+        .addClass("saveBtn col-3 col-lg-1")
         .attr("id",hour.hr24)
         .html("<i class='fas fa-save'></i>");
 
@@ -41,6 +42,7 @@ dayHour.forEach(function(hour){
 
     colorCode();
 });
+
 
 // Color Coding Time-Blocks
 function colorCode(){

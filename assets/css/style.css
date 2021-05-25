@@ -87,7 +87,7 @@ textarea.future:focus {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 2rem;
   color: black;
   transition: all .3s ease-in-out;
 }
@@ -95,4 +95,3 @@ textarea.future:focus {
 .saveBtn:focus{
   outline:none;
 }
-
